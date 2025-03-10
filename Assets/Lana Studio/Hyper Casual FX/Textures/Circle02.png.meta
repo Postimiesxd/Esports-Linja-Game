@@ -1,7 +1,19 @@
 fileFormatVersion: 2
-guid: 8f969d8264ced0248988f924c6d8a7cf
+guid: b27bcf37600cca24196520251965a496
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Circle02_0
+  - first:
+      213: 21300002
+    second: Circle02_1
+  - first:
+      213: 21300004
+    second: Circle02_2
+  - first:
+      213: 21300006
+    second: Circle02_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,9 +75,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -79,7 +91,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -92,69 +104,103 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "b\xE4l\xE4ns_targets_Down_0"
+      name: Circle02_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 392
-        width: 457
-        height: 281
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e826685d1eeda64f9cf0bdd6ff4f900
-      internalID: 1207596221
+      spriteID: ace110a763af3264789bc8ecaa97d8ac
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "b\xE4l\xE4ns_targets_Down_1"
+      name: Circle02_1
       rect:
         serializedVersion: 2
-        x: 1565
-        y: 746
-        width: 258
-        height: 206
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 4, z: 0, w: 202}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 997316c9a66989d42b9b1a03be4a8665
-      internalID: -780673930
+      spriteID: e906ebcdfa906c14aac788624f590297
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "b\xE4l\xE4ns_targets_Down_2"
+      name: Circle02_2
       rect:
         serializedVersion: 2
-        x: 3546
+        x: 0
         y: 0
-        width: 737
-        height: 463
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d6ff4fc87abbfc46840585d45470385
-      internalID: 718570914
+      spriteID: 7603d6c517373db4b8191aedc23305fd
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circle02_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f2253c6a4012e48b5762904ad12315
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -162,7 +208,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 3a38dff1a4966b3429be5e9ec09630be
     internalID: 0
     vertices: []
     indices: 
@@ -170,9 +216,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "b\xE4l\xE4ns_targets_Down_0": 1207596221
-      "b\xE4l\xE4ns_targets_Down_1": -780673930
-      "b\xE4l\xE4ns_targets_Down_2": 718570914
+      Circle02_0: 21300000
+      Circle02_1: 21300002
+      Circle02_2: 21300004
+      Circle02_3: 21300006
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

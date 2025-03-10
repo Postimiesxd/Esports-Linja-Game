@@ -1,7 +1,19 @@
 fileFormatVersion: 2
-guid: 8f969d8264ced0248988f924c6d8a7cf
+guid: 7f221a2efb03036429b23e6e78fe52d5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Dust01_0
+  - first:
+      213: 21300002
+    second: Dust01_1
+  - first:
+      213: 21300004
+    second: Dust01_2
+  - first:
+      213: 21300006
+    second: Dust01_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,98 +75,132 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "b\xE4l\xE4ns_targets_Down_0"
+      name: Dust01_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 392
-        width: 457
-        height: 281
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e826685d1eeda64f9cf0bdd6ff4f900
-      internalID: 1207596221
+      spriteID: 759881a1cf68fd4468aa01f621db9d1a
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "b\xE4l\xE4ns_targets_Down_1"
+      name: Dust01_1
       rect:
         serializedVersion: 2
-        x: 1565
-        y: 746
-        width: 258
-        height: 206
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 4, z: 0, w: 202}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 997316c9a66989d42b9b1a03be4a8665
-      internalID: -780673930
+      spriteID: e029155590e95f64d8df61492e1a7cc5
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "b\xE4l\xE4ns_targets_Down_2"
+      name: Dust01_2
       rect:
         serializedVersion: 2
-        x: 3546
+        x: 0
         y: 0
-        width: 737
-        height: 463
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d6ff4fc87abbfc46840585d45470385
-      internalID: 718570914
+      spriteID: f27906647adf1564db5e4e130263dddf
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dust01_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0439e6c61fdaf9244903c2c3d564e561
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -162,7 +208,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 5e963800933c9324c83334ebdec57ee9
     internalID: 0
     vertices: []
     indices: 
@@ -170,9 +216,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "b\xE4l\xE4ns_targets_Down_0": 1207596221
-      "b\xE4l\xE4ns_targets_Down_1": -780673930
-      "b\xE4l\xE4ns_targets_Down_2": 718570914
+      Dust01_0: 21300000
+      Dust01_1: 21300002
+      Dust01_2: 21300004
+      Dust01_3: 21300006
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
