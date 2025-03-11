@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -52,14 +54,18 @@ public class PlayerController : MonoBehaviour
                 if (hit.collider.CompareTag("Computer"))
                 {
                     Debug.Log("Interacted with Computer!");
+                    // Change the scene here
+                    SceneManager.LoadScene("ComputerMinigame"); // Replace with your target scene name
                 }
                 else if (hit.collider.CompareTag("BenchPress"))
                 {
                     Debug.Log("Interacted with BenchPress!");
+                    SceneManager.LoadScene("BenchPressMinigame");
                 }
                 else if (hit.collider.CompareTag("Fridge"))
                 {
                     Debug.Log("Interacted with Fridge!");
+                    SceneManager.LoadScene("FridgeMinigame");
                 }
             }
         }

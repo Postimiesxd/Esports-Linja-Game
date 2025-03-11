@@ -12,9 +12,9 @@ public class Target : MonoBehaviour
         minigameManager = FindObjectOfType<ComputerMinigame>();
     }
 
-    public void HitTarget()
+    public void Hit()
     {
-        gameObject.SetActive(false); // Hide target when clicked
-        minigameManager.OnTargetHit();
+        Debug.Log(gameObject.name + " was hit!");
+        gameObject.SetActive(false); // Or add a fancier effect
     }
 }
