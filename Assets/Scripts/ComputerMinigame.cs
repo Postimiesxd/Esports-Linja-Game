@@ -15,6 +15,8 @@ public class ComputerMinigame : MonoBehaviour
     public GraphicRaycaster raycaster; // Assign the Canvas's GraphicRaycaster
     public AudioSource audioSource; // Assign this in Unity
     public AudioClip hitSound; // Assign your hit sound in Unity
+    public AudioClip victorySound; // Assign the victory sound in Unity
+    public CameraShake cameraShake; // Reference to the CameraShake script
 
     private void Start()
     {
@@ -29,6 +31,12 @@ public class ComputerMinigame : MonoBehaviour
         else
         {
             Debug.LogError("Crosshair texture not assigned!");
+        }
+
+        // Ensure cameraShake is assigned (if not, log an error)
+        if (cameraShake == null)
+        {
+            Debug.LogError("CameraShake script is not assigned!");
         }
     }
 
@@ -64,6 +72,12 @@ public class ComputerMinigame : MonoBehaviour
                     audioSource.PlayOneShot(hitSound);
                 }
 
+                // Trigger camera shake
+                if (cameraShake != null)
+                {
+                    cameraShake.Shake();
+                }
+
                 OnTargetHit();
                 break;
             }
@@ -75,6 +89,12 @@ public class ComputerMinigame : MonoBehaviour
         targetsHit++;
         if (targetsHit >= totalTargets)
         {
+            // Play the victory sound when all targets are hit
+            if (audioSource != null && victorySound != null)
+            {
+                audioSource.PlayOneShot(victorySound);
+            }
+
             StartCoroutine(CelebrateAndEnd());
         }
     }
