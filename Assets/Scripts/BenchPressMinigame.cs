@@ -28,6 +28,8 @@ public class BenchPressMiniGame : MonoBehaviour
     private float currentTime;
     private int lastBeepTime = -1;
 
+    public Scorekeeper scorekeeper;
+
     void Start()
     {
         currentTime = timeLimit;
@@ -131,8 +133,12 @@ public class BenchPressMiniGame : MonoBehaviour
         }
     }
 
+
+
     void WinMiniGame()
     {
+        scorekeeper.CheckWhichTaskYouJustDidIDK(1);
+
         Debug.Log("Bench press completed!");
         SceneManager.LoadScene("MainGameScene");
     }
@@ -140,7 +146,7 @@ public class BenchPressMiniGame : MonoBehaviour
     void LoseMiniGame()
     {
         Debug.Log("Time's up! You lost the minigame.");
-        SceneManager.LoadScene("LoseTooBuff");
+        SceneManager.LoadScene("BenchPressMinigame");
     }
 }
 

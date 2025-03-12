@@ -18,6 +18,8 @@ public class ComputerMinigame : MonoBehaviour
     public AudioClip victorySound; // Assign the victory sound in Unity
     public CameraShake cameraShake; // Reference to the CameraShake script
 
+    public Scorekeeper scorekeeper;
+
     private void Start()
     {
         // Ensure the cursor is visible and the crosshair is set
@@ -115,6 +117,8 @@ public class ComputerMinigame : MonoBehaviour
                 confettiParticles.Play();
             }
         }
+
+        scorekeeper.CheckWhichTaskYouJustDidIDK(2);
 
         yield return new WaitForSeconds(celebrationDelay);
         SceneManager.LoadScene("MainGameScene");
