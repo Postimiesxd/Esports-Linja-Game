@@ -6,23 +6,31 @@ using TMPro; // Add this line at the top for TextMeshPro
 public class BenchPressMiniGame : MonoBehaviour
 {
     [Header("UI Elements")]
-    public TextMeshProUGUI pressCountText; // Change the Text type to TextMeshProUGUI
+    public TMP_Text pressCountText;
     public Slider progressBar;
     public Image benchPressImage;
     public Sprite image1; // Barbell down
     public Sprite image2; // Barbell up
+    public TMP_Text timerText;
 
     [Header("Audio")]
-    public AudioSource audioSource; // For playing grunting sounds
-    public AudioClip[] grunts; // Array to hold different grunt sounds
+    public AudioSource audioSource;
+    public AudioClip[] grunts;
+    public AudioClip beepSound; // Beep for countdown
 
     [Header("Game Settings")]
     private int pressCount = 0;
     private int targetPressCount = 25;
     private bool isImage1Active = true;
 
+    [Header("Timer Settings")]
+    public float timeLimit = 10f;
+    private float currentTime;
+    private int lastBeepTime = -1;
+
     void Start()
     {
+        currentTime = timeLimit;
         UpdateUI();
         if (benchPressImage != null && image1 != null)
         {
@@ -36,6 +44,24 @@ public class BenchPressMiniGame : MonoBehaviour
 
     void Update()
     {
+        // Countdown timer
+        currentTime -= Time.deltaTime;
+        int timeLeft = Mathf.CeilToInt(currentTime);
+        timerText.text = "" + timeLeft.ToString();
+
+        // Play beeping sound at each second
+        if (timeLeft != lastBeepTime && timeLeft > 0)
+        {
+            PlayBeep(timeLeft);
+            lastBeepTime = timeLeft;
+        }
+
+        if (currentTime <= 0f)
+        {
+            LoseMiniGame();
+        }
+
+        // Bench press mechanic
         if (Input.GetKeyDown(KeyCode.Space))
         {
             pressCount++;
@@ -67,7 +93,7 @@ public class BenchPressMiniGame : MonoBehaviour
     {
         if (audioSource != null && grunts.Length > 0)
         {
-            int randomIndex = Random.Range(0, grunts.Length); // Pick a random grunt sound
+            int randomIndex = Random.Range(0, grunts.Length);
             audioSource.PlayOneShot(grunts[randomIndex]);
         }
         else
@@ -76,11 +102,27 @@ public class BenchPressMiniGame : MonoBehaviour
         }
     }
 
+    void PlayBeep(int timeLeft)
+    {
+        if (audioSource != null && beepSound != null)
+        {
+            if (timeLeft <= 3) // Faster beeps for last 3 seconds
+            {
+                audioSource.pitch = 1.5f; // Speed up the beep
+            }
+            else
+            {
+                audioSource.pitch = 1.0f; // Normal beep sound
+            }
+            audioSource.PlayOneShot(beepSound);
+        }
+    }
+
     void UpdateUI()
     {
         if (pressCountText != null)
         {
-            pressCountText.text = "Press Count: " + pressCount.ToString();
+            pressCountText.text = "25/" + pressCount.ToString();
         }
 
         if (progressBar != null)
@@ -93,6 +135,12 @@ public class BenchPressMiniGame : MonoBehaviour
     {
         Debug.Log("Bench press completed!");
         SceneManager.LoadScene("MainGameScene");
+    }
+
+    void LoseMiniGame()
+    {
+        Debug.Log("Time's up! You lost the minigame.");
+        SceneManager.LoadScene("LoseTooBuff");
     }
 }
 
