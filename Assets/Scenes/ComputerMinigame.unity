@@ -257,7 +257,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b3f2c2d17f016bf48a4f449100f41ee7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.791
+  m_Volume: 0.709
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1166,7 +1166,7 @@ MonoBehaviour:
   raycaster: {fileID: 72721476}
   audioSource: {fileID: 1140407478}
   hitSound: {fileID: 8300000, guid: ca88ad63a6c468f40b2468e49f2f1511, type: 3}
-  victorySound: {fileID: 8300000, guid: 68e3050b80e1438419bd44f16bba3d52, type: 3}
+  victorySound: {fileID: 8300000, guid: 3edf06bcd70aec6419608ae590fe5eda, type: 3}
   cameraShake: {fileID: 335626436}
   scorekeeper: {fileID: 1304319148}
 --- !u!4 &1140407477

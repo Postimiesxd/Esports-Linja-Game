@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Scorekeeper : MonoBehaviour
 {
+    public static Scorekeeper Instance;
+
     // Start is called before the first frame update
     public int yellow;
     public int purple;
@@ -14,7 +16,16 @@ public class Scorekeeper : MonoBehaviour
     
     void Start()
     {
-        DontDestroyOnLoad(gameObject.transform);
+        if (Instance == null)
+        {
+            DontDestroyOnLoad(gameObject.transform);
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+  
     }
 
     // Update is called once per frame

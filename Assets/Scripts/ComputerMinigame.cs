@@ -22,6 +22,8 @@ public class ComputerMinigame : MonoBehaviour
 
     private void Start()
     {
+        scorekeeper = FindObjectOfType<Scorekeeper>();
+
         // Ensure the cursor is visible and the crosshair is set
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;  // Unlock the cursor so it can move freely

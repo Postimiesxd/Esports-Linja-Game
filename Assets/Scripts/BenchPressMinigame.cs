@@ -32,6 +32,8 @@ public class BenchPressMiniGame : MonoBehaviour
 
     void Start()
     {
+        scorekeeper = FindObjectOfType<Scorekeeper>();
+
         currentTime = timeLimit;
         UpdateUI();
         if (benchPressImage != null && image1 != null)

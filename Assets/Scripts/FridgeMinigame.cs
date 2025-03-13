@@ -21,10 +21,30 @@ public class FridgeMinigame : MonoBehaviour
     public AudioClip correctSound;
     public AudioClip wrongSound;
 
-    // Called when a food item is clicked
-    public void SelectFood(Button foodButton, bool isHealthy)
+    public Scorekeeper scorekeeper;
+
+
+    public void Start()
     {
-        // Disable the button after it's clicked
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        scorekeeper = FindObjectOfType<Scorekeeper>();
+    }
+
+    // Select food without needing parameters for Unity's OnClick()
+    public void SelectHealthyFood(Button foodButton)
+    {
+        ProcessFoodSelection(foodButton, true);
+    }
+
+    public void SelectUnhealthyFood(Button foodButton)
+    {
+        ProcessFoodSelection(foodButton, false);
+    }
+
+    private void ProcessFoodSelection(Button foodButton, bool isHealthy)
+    {
+        // Disable button after click
         foodButton.interactable = false;
 
         if (isHealthy)
@@ -64,8 +84,11 @@ public class FridgeMinigame : MonoBehaviour
         }
     }
 
+
     void WinMiniGame()
     {
+        scorekeeper.CheckWhichTaskYouJustDidIDK(3);
+
         Debug.Log("You picked all the healthy foods!");
         SceneManager.LoadScene("MainGameScene");
     }
