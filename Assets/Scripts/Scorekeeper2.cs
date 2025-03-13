@@ -30,14 +30,14 @@ public class Scorekeeper2 : MonoBehaviour
     {
         if (previous == tasknumber)
         {
-            // Subtract if the same task is repeated
-            if (tasknumber == 1) yellow--;
-            else if (tasknumber == 2) purple--;
-            else if (tasknumber == 3) green--;
+            Debug.Log("Repeating the same task, score adjusted down.");
+            if (tasknumber == 1) yellow = Mathf.Max(0, yellow - 1);
+            else if (tasknumber == 2) purple = Mathf.Max(0, purple - 1);
+            else if (tasknumber == 3) green = Mathf.Max(0, green - 1);
         }
         else
         {
-            // Add if it's a new task
+            Debug.Log("New task, score adjusted up.");
             if (tasknumber == 1) yellow++;
             else if (tasknumber == 2) purple++;
             else if (tasknumber == 3) green++;
@@ -50,7 +50,7 @@ public class Scorekeeper2 : MonoBehaviour
 
     private void CheckForVictory()
     {
-        if (yellow >= 3 || purple >= 3 || green >= 3)
+        if (yellow == 1 || purple == 1 || green == 1)
         {
             SceneManager.LoadScene("VictoryScene"); // Make sure the scene name matches exactly
         }

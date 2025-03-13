@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class ComputerMinigame : MonoBehaviour
 {
+    private MainGameTimer mainGameTimer;
     private int targetsHit = 0;
     private int totalTargets = 3;
     public float celebrationDelay = 2f;
@@ -42,6 +43,8 @@ public class ComputerMinigame : MonoBehaviour
         {
             Debug.LogError("CameraShake script is not assigned!");
         }
+        mainGameTimer = FindObjectOfType<MainGameTimer>();
+        mainGameTimer.SetTimerVisibility(false);
     }
 
     private void Update()
@@ -120,9 +123,18 @@ public class ComputerMinigame : MonoBehaviour
             }
         }
 
+        yield return new WaitForSeconds(celebrationDelay);
+        WinMiniGame();
+        //SceneManager.LoadScene("MainGameScene");
+    }
+
+    private void WinMiniGame()
+    {
+        mainGameTimer.SetTimerVisibility(true);
         scorekeeper.CheckWhichTaskYouJustDidIDK(2);
 
-        yield return new WaitForSeconds(celebrationDelay);
-        SceneManager.LoadScene("MainGameScene");
+        Debug.Log("Benchpress won!");
+        //SceneManager.LoadScene("MainGameScene");
     }
+
 }

@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class FridgeMinigame : MonoBehaviour
 {
+    private MainGameTimer mainGameTimer;
+
     [Header("UI Elements")]
     public TMP_Text scoreText;
     public TMP_Text feedbackText;
@@ -29,6 +31,8 @@ public class FridgeMinigame : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         scorekeeper = FindObjectOfType<Scorekeeper>();
+        mainGameTimer = FindObjectOfType<MainGameTimer>();
+        mainGameTimer.SetTimerVisibility(false);
     }
 
     // Select food without needing parameters for Unity's OnClick()
@@ -87,9 +91,10 @@ public class FridgeMinigame : MonoBehaviour
 
     void WinMiniGame()
     {
+        mainGameTimer.SetTimerVisibility(true);
         scorekeeper.CheckWhichTaskYouJustDidIDK(3);
 
         Debug.Log("You picked all the healthy foods!");
-        SceneManager.LoadScene("MainGameScene");
+        //SceneManager.LoadScene("MainGameScene");
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Scorekeeper : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Scorekeeper : MonoBehaviour
     public int green;
 
     public int previous;
+
+
     
     
     void Start()
@@ -67,6 +70,16 @@ public class Scorekeeper : MonoBehaviour
             }
         }
         previous = tasknumber;
+        if (yellow == 1 && purple == 1 && green == 1)
+        {
+            // Victory condition met, load victory scene
+            SceneManager.LoadScene("VictoryScene"); // Change "VictoryScene" to your scene name
+        }
+        else
+        {
+            SceneManager.LoadScene("MainGameScene");
+        }
+
     }
 
 }

@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; // For scene loading
 using UnityEngine.UI; // For UI elements
@@ -5,6 +7,8 @@ using TMPro; // Add this line at the top for TextMeshPro
 
 public class BenchPressMiniGame : MonoBehaviour
 {
+    private MainGameTimer mainGameTimer;
+
     [Header("UI Elements")]
     public TMP_Text pressCountText;
     public Slider progressBar;
@@ -44,6 +48,8 @@ public class BenchPressMiniGame : MonoBehaviour
         {
             Debug.LogError("BenchPressImage or Image1 not assigned!");
         }
+        mainGameTimer = FindObjectOfType<MainGameTimer>();
+        mainGameTimer.SetTimerVisibility(false);
     }
 
     void Update()
@@ -139,10 +145,11 @@ public class BenchPressMiniGame : MonoBehaviour
 
     void WinMiniGame()
     {
+        mainGameTimer.SetTimerVisibility(true);
         scorekeeper.CheckWhichTaskYouJustDidIDK(1);
 
         Debug.Log("Bench press completed!");
-        SceneManager.LoadScene("MainGameScene");
+        //SceneManager.LoadScene("MainGameScene");
     }
 
     void LoseMiniGame()
@@ -150,5 +157,6 @@ public class BenchPressMiniGame : MonoBehaviour
         Debug.Log("Time's up! You lost the minigame.");
         SceneManager.LoadScene("BenchPressMinigame");
     }
+
 }
 
