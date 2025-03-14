@@ -1324,6 +1324,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 8118351291376751550, guid: 54be3281070430f49bfecf290210dff1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5342955299994707982, guid: 54be3281070430f49bfecf290210dff1, type: 3}
@@ -1355,6 +1360,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 7864840242060303621, guid: 72434f93f25da1a49ab7cc6e15ae1e9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8217954783645906532, guid: 72434f93f25da1a49ab7cc6e15ae1e9d,
         type: 3}

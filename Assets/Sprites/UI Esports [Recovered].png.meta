@@ -95,18 +95,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: UI Esports [Recovered]_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1827
+        width: 482
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db48f3162db1a0a469380899d3fd027b
+      internalID: -1443206600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Esports [Recovered]_1
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1924
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d56cab29e9d22a4995901aefc83287f
+      internalID: 437592348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Esports [Recovered]_2
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1839
+        width: 2380
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f348330245c5535429f07048087fdd46
+      internalID: -1458340459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Esports [Recovered]_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1327
+        width: 432
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9beb50f223d8b4e985c95ebfd6ffbc
+      internalID: -1125583614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Esports [Recovered]_4
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1400
+        width: 1780
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e177c0bc8901b642805851c02834a44
+      internalID: -617000977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Esports [Recovered]_5
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 906
+        width: 406
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb9ea4ff94bee84d9d90b4eb8a7ef72
+      internalID: -1218892988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Esports [Recovered]_6
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 961
+        width: 1778
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e45634c2e2f1748b55a05da11c1e1c
+      internalID: -177390571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Esports [Recovered]_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 443
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eadeb790b0129246adc62b2a0c0b0d2
+      internalID: 1847263914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Esports [Recovered]_8
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 44
+        width: 468
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d60f4f87235c741807d19359fc1029
+      internalID: -1762362542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Esports [Recovered]_9
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 0
+        width: 1565
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7c84d7feeeee741815b5e7ac9046d7
+      internalID: -1924812210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2fe6e5ac3eb764447938ddb441a5c27e
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI Esports [Recovered]_0: -1443206600
+      UI Esports [Recovered]_1: 437592348
+      UI Esports [Recovered]_2: -1458340459
+      UI Esports [Recovered]_3: -1125583614
+      UI Esports [Recovered]_4: -617000977
+      UI Esports [Recovered]_5: -1218892988
+      UI Esports [Recovered]_6: -177390571
+      UI Esports [Recovered]_7: 1847263914
+      UI Esports [Recovered]_8: -1762362542
+      UI Esports [Recovered]_9: -1924812210
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

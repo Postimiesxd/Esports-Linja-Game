@@ -70,7 +70,7 @@ public class Scorekeeper : MonoBehaviour
             }
         }
         previous = tasknumber;
-        if (yellow == 1 && purple == 1 && green == 1)
+        if (yellow >= 3 && purple >= 3 && green >= 3)
         {
             // Victory condition met, load victory scene
             SceneManager.LoadScene("VictoryScene"); // Change "VictoryScene" to your scene name
